@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tharushi's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+<!-- Header Section -->
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="my photos.jpg" class="logo" alt="Logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Software Engineering Student</p>
+            <h1>Hey, I am <span>Tharushi</span><br>Aravindi from Sri Lanka</h1>
+        </div>
+    </div>
+</div>
+
+<!-- About Section -->
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Screenshot_20250717-171129_WhatsApp.jpg" alt="About Me Image">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am Tharushi Aravindi from Sri Lanka. I am a student at the University of Kelaniya pursuing a Bachelor of Science in Software Engineering. I have a strong interest in web development and enjoy building responsive, user-friendly websites. I am motivated to continuously learn new technologies and improve my skills.</p>
+
+                <!-- Tabs -->
+                <div class="tab-titles">
+                    <p class="tab-links active-links" onclick="opentab(event,'skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab(event,'experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab(event,'education')">Education</p>
+                </div>
+
+                <!-- Tab Contents -->
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Software Engineering Student</span><br>University of Kelaniya</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>App Development</span><br>Building Android Apps</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>IT Training</span><br>Bank of Ceylon</li>
+                        <li><span>Computer Hardware & Software Workshop</span><br>Frontend Development</li>
+                        <li><span>Programming Languages</span><br>Java, HTML, SQL</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>G/C/E AL</span><br>Completed Maths, Physics, Chemistry Stream</li>
+                        <li><span>IT Course</span><br>Nenasala Miriswaththa</li>
+                        <li><span>English Diploma</span><br>Aquinas College, Colombo</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>My own portfolio website</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>UI/UX Design</h2>
+                <p>Frontend Design for YouTube projects</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fas fa-mobile-alt"></i>
+                <h2>App Design</h2>
+                <p>Simple Android apps</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="scocialmedia.png" alt="Social Media Project">
+                <div class="layer">
+                    <h3>Social Media</h3>
+                    <p>Active on Facebook, Instagram, LinkedIn</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="musicapp.jpg" alt="Music App Project">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>Simple music app development</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="online.png" alt="Online Shopping App Project">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>Amazon clone project</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> tharushiaravindi1@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 0755125032</p>
+                <div class="social-icon">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/mycv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<div class="copyright">
+    <p>Copyright © Tharushi. Made with <i class="fas fa-heart"></i></p>
+</div>
+
+<!-- Tabs JS -->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(event, tabname) {
+        for (var tablink of tablinks) {
+            tablink.classList.remove("active-links");
+        }
+        for (var tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-links");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+</body>
+</html>
